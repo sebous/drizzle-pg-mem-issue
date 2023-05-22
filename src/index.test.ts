@@ -8,7 +8,7 @@ vi.mock("./index", async () => {
 	const { migrate } = await import("drizzle-orm/node-postgres/migrator");
 	const { newDb } = await import("pg-mem");
 
-	const inMemoryDb = newDb().adapters.createPg().Client as NodePgClient;
+	const inMemoryDb = newDb().adapters.createPg().Client;
 	const db = drizzle(inMemoryDb);
 
 	await migrate(db, { migrationsFolder: "drizzle" }).catch((err) =>

@@ -13,12 +13,12 @@
 	"license": "ISC",
 	"dependencies": {
 		"dotenv": "^16.0.3",
-		"drizzle-orm": "^0.23.4",
+		"drizzle-orm": "^0.26.0",
 		"postgres": "^3.3.3"
 	},
 	"devDependencies": {
 		"@types/node": "^18.15.11",
-		"drizzle-kit": "0.17.1-609a4f0",
+		"drizzle-kit": "^0.18.0",
 		"pg-mem": "^2.6.12",
 		"tsx": "^3.12.6",
 		"typescript": "^5.0.3",
