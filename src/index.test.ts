@@ -22,5 +22,5 @@ test("in memory db works", async () => {
 	await db.insert(user).values({ id: 1, name: "John" }).execute();
 
 	const result = await db.select().from(user).limit(1).execute();
-	expect(result).toMatchObject({ id: 1, name: "John" });
+	expect(result[0]).toMatchObject({ id: 1, name: "John" });
 });
